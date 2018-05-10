@@ -11,7 +11,7 @@ import json
 import glob
 
 path = str(os.path.dirname(os.path.realpath(__file__))) + "/"
-with codecs.open(path + 'config.yml', encoding='utf-8') as ymlfile:
+with codecs.open(path + 'config.yml') as ymlfile:
     ymlstring = ymlfile.read()
 
 config = parse_string(ymlstring)
